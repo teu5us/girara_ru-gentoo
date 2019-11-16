@@ -1,0 +1,232 @@
+diff --git a/girara/callbacks.c b/girara/callbacks.c
+index 80d6b41..6748420 100644
+--- a/girara/callbacks.c
++++ b/girara/callbacks.c
+@@ -70,6 +70,201 @@ clean_mask(GtkWidget* widget, guint hardware_keycode, GdkModifierType state, gin
+     case GDK_KEY_KP_9:
+       *keyval = GDK_KEY_9;
+       break;
++    case GDK_KEY_Cyrillic_shorti:
++      *keyval = GDK_KEY_q;
++      break;
++    case GDK_KEY_Cyrillic_SHORTI:
++      *keyval = GDK_KEY_Q;
++      break;
++    case GDK_KEY_Cyrillic_tse:
++      *keyval = GDK_KEY_w;
++      break;
++    case GDK_KEY_Cyrillic_TSE:
++      *keyval = GDK_KEY_W;
++      break;
++    case GDK_KEY_Cyrillic_u:
++      *keyval = GDK_KEY_e;
++      break;
++    case GDK_KEY_Cyrillic_U:
++      *keyval = GDK_KEY_E;
++      break;
++    case GDK_KEY_Cyrillic_ka:
++      *keyval = GDK_KEY_r;
++      break;
++    case GDK_KEY_Cyrillic_KA:
++      *keyval = GDK_KEY_R;
++      break;
++    case GDK_KEY_Cyrillic_ie:
++      *keyval = GDK_KEY_t;
++      break;
++    case GDK_KEY_Cyrillic_en:
++      *keyval = GDK_KEY_y;
++      break;
++    case GDK_KEY_Cyrillic_EN:
++      *keyval = GDK_KEY_Y;
++      break;
++    case GDK_KEY_Cyrillic_ghe:
++      *keyval = GDK_KEY_u;
++      break;
++    case GDK_KEY_Cyrillic_GHE:
++      *keyval = GDK_KEY_U;
++      break;
++    case GDK_KEY_Cyrillic_sha:
++      *keyval = GDK_KEY_i;
++      break;
++    case GDK_KEY_Cyrillic_SHA:
++      *keyval = GDK_KEY_I;
++      break;
++    case GDK_KEY_Cyrillic_shcha:
++      *keyval = GDK_KEY_o;
++      break;
++    case GDK_KEY_Cyrillic_SHCHA:
++      *keyval = GDK_KEY_O;
++      break;
++    case GDK_KEY_Cyrillic_ze:
++      *keyval = GDK_KEY_p;
++      break;
++    case GDK_KEY_Cyrillic_ZE:
++      *keyval = GDK_KEY_P;
++      break;
++    case GDK_KEY_Cyrillic_ha:
++      *keyval = GDK_KEY_bracketleft;
++      break;
++    case GDK_KEY_Cyrillic_HA:
++      *keyval = GDK_KEY_braceleft;
++      break;
++    case GDK_KEY_Cyrillic_hardsign:
++      *keyval = GDK_KEY_bracketright;
++      break;
++    case GDK_KEY_Cyrillic_HARDSIGN:
++      *keyval = GDK_KEY_braceright;
++      break;
++    case GDK_KEY_Cyrillic_ef:
++      *keyval = GDK_KEY_a;
++      break;
++    case GDK_KEY_Cyrillic_EF:
++      *keyval = GDK_KEY_A;
++      break;
++    case GDK_KEY_Cyrillic_yeru:
++      *keyval = GDK_KEY_s;
++      break;
++    case GDK_KEY_Cyrillic_YERU:
++      *keyval = GDK_KEY_S;
++      break;
++    case GDK_KEY_Cyrillic_ve:
++      *keyval = GDK_KEY_d;
++      break;
++    case GDK_KEY_Cyrillic_VE:
++      *keyval = GDK_KEY_D;
++      break;
++    case GDK_KEY_Cyrillic_a:
++      *keyval = GDK_KEY_f;
++      break;
++    case GDK_KEY_Cyrillic_A:
++      *keyval = GDK_KEY_F;
++      break;
++    case GDK_KEY_Cyrillic_pe:
++      *keyval = GDK_KEY_g;
++      break;
++    case GDK_KEY_Cyrillic_PE:
++      *keyval = GDK_KEY_G;
++      break;
++    case GDK_KEY_Cyrillic_er:
++      *keyval = GDK_KEY_h;
++      break;
++    case GDK_KEY_Cyrillic_ER:
++      *keyval = GDK_KEY_H;
++      break;
++    case GDK_KEY_Cyrillic_o:
++      *keyval = GDK_KEY_j;
++      break;
++    case GDK_KEY_Cyrillic_O:
++      *keyval = GDK_KEY_J;
++      break;
++    case GDK_KEY_Cyrillic_el:
++      *keyval = GDK_KEY_k;
++      break;
++    case GDK_KEY_Cyrillic_EL:
++      *keyval = GDK_KEY_K;
++      break;
++    case GDK_KEY_Cyrillic_de:
++      *keyval = GDK_KEY_l;
++      break;
++    case GDK_KEY_Cyrillic_DE:
++      *keyval = GDK_KEY_L;
++      break;
++    case GDK_KEY_Cyrillic_zhe:
++      *keyval = GDK_KEY_semicolon;
++      break;
++    case GDK_KEY_Cyrillic_ZHE:
++      *keyval = GDK_KEY_colon;
++      break;
++    case GDK_KEY_Cyrillic_e:
++      *keyval = GDK_KEY_apostrophe;
++      break;
++    case GDK_KEY_Cyrillic_E:
++      *keyval = GDK_KEY_quotedbl;
++      break;
++    case GDK_KEY_Cyrillic_ya:
++      *keyval = GDK_KEY_z;
++      break;
++    case GDK_KEY_Cyrillic_YA:
++      *keyval = GDK_KEY_Z;
++      break;
++    case GDK_KEY_Cyrillic_che:
++      *keyval = GDK_KEY_x;
++      break;
++    case GDK_KEY_Cyrillic_CHE:
++      *keyval = GDK_KEY_X;
++      break;
++    case GDK_KEY_Cyrillic_es:
++      *keyval = GDK_KEY_c;
++      break;
++    case GDK_KEY_Cyrillic_ES:
++      *keyval = GDK_KEY_C;
++      break;
++    case GDK_KEY_Cyrillic_em:
++      *keyval = GDK_KEY_v;
++      break;
++    case GDK_KEY_Cyrillic_EM:
++      *keyval = GDK_KEY_V;
++      break;
++    case GDK_KEY_Cyrillic_i:
++      *keyval = GDK_KEY_b;
++      break;
++    case GDK_KEY_Cyrillic_I:
++      *keyval = GDK_KEY_B;
++      break;
++    case GDK_KEY_Cyrillic_te:
++      *keyval = GDK_KEY_n;
++      break;
++    case GDK_KEY_Cyrillic_TE:
++      *keyval = GDK_KEY_N;
++      break;
++    case GDK_KEY_Cyrillic_softsign:
++      *keyval = GDK_KEY_m;
++      break;
++    case GDK_KEY_Cyrillic_SOFTSIGN:
++      *keyval = GDK_KEY_M;
++      break;
++    case GDK_KEY_Cyrillic_be:
++      *keyval = GDK_KEY_comma;
++      break;
++    case GDK_KEY_Cyrillic_BE:
++      *keyval = GDK_KEY_less;
++      break;
++    case GDK_KEY_Cyrillic_yu:
++      *keyval = GDK_KEY_period;
++      break;
++    case GDK_KEY_Cyrillic_YU:
++      *keyval = GDK_KEY_greater;
++      break;
++    case GDK_KEY_Cyrillic_io:
++      *keyval = GDK_KEY_grave;
++      break;
++    case GDK_KEY_Cyrillic_IO:
++      *keyval = GDK_KEY_asciitilde;
++      break;
+   }
+ 
+   return true;
+diff --git a/girara/commands.c b/girara/commands.c
+index 9dce212..bc0f8ad 100644
+--- a/girara/commands.c
++++ b/girara/commands.c
+@@ -54,7 +54,7 @@ girara_cmd_map_unmap(girara_session_t* session, girara_list_t* argument_list,
+     {"ShiftTab",  GDK_KEY_ISO_Left_Tab},
+     {"Up",        GDK_KEY_Up},
+     {"Print",     GDK_KEY_Print},
+-    {"Home",     GDK_KEY_Home}
++    {"Home",     GDK_KEY_Home},
+   };
+ 
+   typedef struct gdk_mouse_button_s
+diff --git a/girara/shortcuts.c b/girara/shortcuts.c
+index c7afa5d..975fc81 100644
+--- a/girara/shortcuts.c
++++ b/girara/shortcuts.c
+@@ -560,7 +560,7 @@ girara_sc_feedkeys(girara_session_t* session, girara_argument_t* argument,
+     {"Super",     GDK_KEY_Super_L},
+     {"Tab",       GDK_KEY_Tab},
+     {"ShiftTab",  GDK_KEY_ISO_Left_Tab},
+-    {"Up",        GDK_KEY_Up}
++    {"Up",        GDK_KEY_Up},
+   };
+ 
+   char* input               = (char*) argument->data;
