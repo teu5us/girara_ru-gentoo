@@ -204,29 +204,3 @@ index 80d6b41..6748420 100644
    }
  
    return true;
-diff --git a/girara/commands.c b/girara/commands.c
-index 9dce212..bc0f8ad 100644
---- a/girara/commands.c
-+++ b/girara/commands.c
-@@ -54,7 +54,7 @@ girara_cmd_map_unmap(girara_session_t* session, girara_list_t* argument_list,
-     {"ShiftTab",  GDK_KEY_ISO_Left_Tab},
-     {"Up",        GDK_KEY_Up},
-     {"Print",     GDK_KEY_Print},
--    {"Home",     GDK_KEY_Home}
-+    {"Home",     GDK_KEY_Home},
-   };
- 
-   typedef struct gdk_mouse_button_s
-diff --git a/girara/shortcuts.c b/girara/shortcuts.c
-index c7afa5d..975fc81 100644
---- a/girara/shortcuts.c
-+++ b/girara/shortcuts.c
-@@ -560,7 +560,7 @@ girara_sc_feedkeys(girara_session_t* session, girara_argument_t* argument,
-     {"Super",     GDK_KEY_Super_L},
-     {"Tab",       GDK_KEY_Tab},
-     {"ShiftTab",  GDK_KEY_ISO_Left_Tab},
--    {"Up",        GDK_KEY_Up}
-+    {"Up",        GDK_KEY_Up},
-   };
- 
-   char* input               = (char*) argument->data;
